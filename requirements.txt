@@ -1,0 +1,10 @@
+aiogram
+aiogram_dialog
+aiogram_i18n
+python-dotenv
+motor
+pymongo
+fluent
+fluent.runtime
+libcst
+betterlogging
