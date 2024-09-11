@@ -8,4 +8,7 @@ router = Router()
 
 @router.message(CommandStart())
 async def start(msg: Message) -> None:
-    await msg.answer("Hello, world!")
+    bot = await (router.parent_router.workflow_data['bot']).get_me()
+
+    await msg.answer(f"Hello, world!\nMy name is {bot.username}")
+    
